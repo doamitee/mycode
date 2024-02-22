@@ -26,10 +26,10 @@ class App {
     trace();
 
     var thomas = new Person("Thomas", 36);
-
-    var outer = () => {
-      var { name, age } = thomas;
-      console.log(name);
+//3 line unerneath are broken
+  //  var outer = () => {
+     // var { name, age } = thomas;
+     // console.log(name);
 
       var inner = () => {
         trace();
